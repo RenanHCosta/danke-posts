@@ -5,7 +5,7 @@ export interface Props {
 export default function GetBin(
   { status }: Props,
   _req: Request,
-  ctx: AppContext,
+  ctx: AppContext
 ): Promise<Response> {
   return fetch(`${ctx.url}/${status}`);
 }

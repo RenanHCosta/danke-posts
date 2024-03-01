@@ -6,9 +6,7 @@ export interface State {
   url: string;
 }
 export type MyApp = App<Manifest, State>;
-export default function App(
-  state: State,
-): MyApp {
+export default function App(state: State): MyApp {
   return {
     manifest,
     state,
